@@ -1,0 +1,18 @@
+nav.back-to-site {
+    background-color: #353535;
+    padding: 20px;
+}
+
+nav.back-to-site p {
+    margin:0;
+}
+
+nav.back-to-site p a,
+nav.back-to-site p span {
+	color:#fff;
+	vertical-align:middle;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	text-align:center;
+}
