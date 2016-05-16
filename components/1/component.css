@@ -4,3 +4,165 @@
 
 @import '../../css/main.css';
 @import '../../css/components.css';
+
+/* Responsive .navigation */
+
+
+h1.nav-logo {
+	margin:0;
+	padding:0;
+	display:inline-block;
+	text-align:left;
+	font-family:'Roboto',Arial,sans-serif;
+	font-size:1.2em;
+	line-height:60px;
+	color:#fff;
+}
+
+h1.nav-logo a {
+	color:#fff;
+}
+
+.nav {
+  background-color: #3d3d3d;
+  width: 100%;
+  z-index: 99;
+  height:60px;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.nav li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid rgba(255,255,255,0.2);
+  text-decoration: none;
+  color:#fff;
+}
+
+.nav li:last-child a {
+	border-right:0;
+}
+
+.nav li a:hover,
+.nav .menu-button:hover {
+  background-color: #4f4f4f;
+}
+
+.nav .nav-logo a {
+  display: block;
+  float: left;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.nav .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.nav .hamburger-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.nav .hamburger-icon .icon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.nav .hamburger-icon .icon:before,
+.nav .hamburger-icon .icon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.nav .hamburger-icon .icon:before {
+  top: 5px;
+}
+
+.nav .hamburger-icon .icon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.nav .menu-button {
+  display: none;
+}
+
+.nav .menu-button:checked ~ .menu {
+  max-height: 240px;
+}
+
+.nav .menu-button:checked ~ .hamburger-icon .icon {
+  background: transparent;
+}
+
+.nav .menu-button:checked ~ .hamburger-icon .icon:before {
+  transform: rotate(-45deg);
+}
+
+.nav .menu-button:checked ~ .hamburger-icon .icon:after {
+  transform: rotate(45deg);
+}
+
+.nav .menu-button:checked ~ .hamburger-icon:not(.steps) .icon:before,
+.nav .menu-button:checked ~ .hamburger-icon:not(.steps) .icon:after {
+  top: 0;
+}
+
+
+@media (min-width: 768px) {
+  .nav li {
+    float: left;
+  }
+  .nav li a {
+    padding: 20px 30px;
+  }
+  .nav .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .nav .hamburger-icon {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+
+  .nav li a {
+    border-right:0;
+    border-bottom:1px solid #7a7a7a;
+    background-color:#ccc;
+    color:#3d3d3d;
+  }
+
+  .nav li a:hover {
+  	color:#fff;
+  }
+
+}
