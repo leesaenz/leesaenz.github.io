@@ -4,3 +4,69 @@
 
 @import '../../css/main.css';
 @import '../../css/components.css';
+@import url("keyframes.css") screen;
+
+#slideshow {
+	background:#000;
+	height:420px;
+	width:100%;
+	margin:40px auto 0;
+	overflow:visible;
+	position:relative;
+}
+#slide-mask {
+	overflow:hidden;
+	height:410px;
+}
+#slideshow ul {
+	margin:0;
+	padding:0;
+	position:relative;
+}
+#slideshow li {
+	height:420px;
+	position:absolute;
+	top:-425px;
+	list-style:none;
+}
+
+#slideshow img {
+	width:100%;
+}
+
+#slideshow li.ani-one {
+	-moz-animation:cycle 25s linear infinite;	
+	-webkit-animation:cycle 25s linear infinite;		
+}
+#slideshow li.ani-two {
+	-moz-animation:cycletwo 25s linear infinite;
+	-webkit-animation:cycletwo 25s linear infinite;		
+}
+#slideshow li.ani-three {
+	-moz-animation:cyclethree 25s linear infinite;
+	-webkit-animation:cyclethree 25s linear infinite;		
+}
+#slideshow li.ani-four {
+	-moz-animation:cyclefour 25s linear infinite;
+	-webkit-animation:cyclefour 25s linear infinite;		
+}
+#slideshow li.ani-five {
+	-moz-animation:cyclefive 25s linear infinite;
+	-webkit-animation:cyclefive 25s linear infinite;		
+}
+#slideshow:hover li, 
+#slideshow:hover .progress-bar {
+	-moz-animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+}
+
+/* PROGRESS BAR */
+.progress-bar { 
+	position:relative;
+	top:-5px;
+	width:680px; 
+	height:5px;
+	background:#57aff3;
+	-moz-animation:fullexpand 25s ease-out infinite;
+	-webkit-animation:fullexpand 25s ease-out infinite;
+}
