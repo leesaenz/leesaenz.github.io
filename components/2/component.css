@@ -18,43 +18,43 @@
 	overflow:hidden;
 	height:410px;
 }
-#slideshow ul {
+#slideshow .slides {
 	margin:0;
 	padding:0;
 	position:relative;
 }
-#slideshow li {
+#slideshow .slide {
 	height:420px;
 	position:absolute;
 	top:-425px;
 	list-style:none;
 }
 
-#slideshow img {
+#slideshow .slide-image {
 	width:100%;
 }
 
-#slideshow li.ani-one {
+#slideshow .slide.ani-one {
 	-moz-animation:cycle 25s linear infinite;	
 	-webkit-animation:cycle 25s linear infinite;		
 }
-#slideshow li.ani-two {
+#slideshow .slide.ani-two {
 	-moz-animation:cycletwo 25s linear infinite;
 	-webkit-animation:cycletwo 25s linear infinite;		
 }
-#slideshow li.ani-three {
+#slideshow .slide.ani-three {
 	-moz-animation:cyclethree 25s linear infinite;
 	-webkit-animation:cyclethree 25s linear infinite;		
 }
-#slideshow li.ani-four {
+#slideshow .slide.ani-four {
 	-moz-animation:cyclefour 25s linear infinite;
 	-webkit-animation:cyclefour 25s linear infinite;		
 }
-#slideshow li.ani-five {
+#slideshow .slide.ani-five {
 	-moz-animation:cyclefive 25s linear infinite;
 	-webkit-animation:cyclefive 25s linear infinite;		
 }
-#slideshow:hover li, 
+#slideshow:hover .slide, 
 #slideshow:hover .progress-bar {
 	-moz-animation-play-state:paused;
 	-webkit-animation-play-state:paused;

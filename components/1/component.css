@@ -5,10 +5,9 @@
 @import '../../css/main.css';
 @import '../../css/components.css';
 
-/* Responsive .navigation */
+/* Responsive navigation */
 
-
-h1.nav-logo {
+.nav-logo {
 	margin:0;
 	padding:0;
 	display:inline-block;
@@ -19,7 +18,7 @@ h1.nav-logo {
 	color:#fff;
 }
 
-h1.nav-logo a {
+.nav-logo .logo {
 	color:#fff;
 }
 
@@ -30,14 +29,14 @@ h1.nav-logo a {
   height:60px;
 }
 
-.nav ul {
+.nav .menu {
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
 }
 
-.nav li a {
+.nav .nav-link .link {
   display: block;
   padding: 20px 20px;
   border-right: 1px solid rgba(255,255,255,0.2);
@@ -45,16 +44,16 @@ h1.nav-logo a {
   color:#fff;
 }
 
-.nav li:last-child a {
+.nav .nav-link:last-child .link {
 	border-right:0;
 }
 
-.nav li a:hover,
+.nav .nav-link .link:hover,
 .nav .menu-button:hover {
   background-color: #4f4f4f;
 }
 
-.nav .nav-logo a {
+.nav .nav-logo .logo {
   display: block;
   float: left;
   padding: 0 20px;
@@ -137,10 +136,10 @@ h1.nav-logo a {
 
 
 @media (min-width: 768px) {
-  .nav li {
+  .nav .nav-link {
     float: left;
   }
-  .nav li a {
+  .nav .nav-link .link {
     padding: 20px 30px;
   }
   .nav .menu {
@@ -154,14 +153,14 @@ h1.nav-logo a {
 }
 @media (max-width: 768px) {
 
-  .nav li a {
+  .nav .nav-link .link {
     border-right:0;
     border-bottom:1px solid #7a7a7a;
     background-color:#ccc;
     color:#3d3d3d;
   }
 
-  .nav li a:hover {
+  .nav .nav-link .link:hover {
   	color:#fff;
   }
 
